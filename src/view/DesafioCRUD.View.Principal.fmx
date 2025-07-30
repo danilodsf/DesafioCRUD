@@ -1,0 +1,502 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Desafio CRUD'
+  ClientHeight = 600
+  ClientWidth = 824
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lytPrincipal: TLayout
+    Align = Client
+    Size.Width = 824.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object rctPrincipal: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 551.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lytModulos: TLayout
+        Align = Top
+        Size.Width = 551.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rectangle3: TRectangle
+          Align = Contents
+          Fill.Color = xFF8037DA
+          Size.Width = 551.000000000000000000
+          Size.Height = 73.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object btnCategorias: TRectangle
+          Tag = 1
+          Anchors = [akTop, akRight]
+          Fill.Color = xFF8037DA
+          Position.X = 8.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 117.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = btnCategoriasClick
+          OnMouseEnter = btnCategoriasMouseEnter
+          OnMouseLeave = btnCategoriasMouseLeave
+          object lblCategorias: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 92.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            TextSettings.WordWrap = False
+            Text = 'CATEGORIAS'
+            TabOrder = 0
+          end
+        end
+        object btnProdutos: TRectangle
+          Tag = 2
+          Anchors = [akTop, akRight]
+          Fill.Color = xFF8037DA
+          Position.X = 135.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 115.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = btnProdutosClick
+          OnMouseEnter = btnCategoriasMouseEnter
+          OnMouseLeave = btnCategoriasMouseLeave
+          object lblProdutos: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 81.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            TextSettings.WordWrap = False
+            Text = 'PRODUTOS'
+            TabOrder = 0
+          end
+        end
+        object btnMovimentacao: TRectangle
+          Tag = 3
+          Anchors = [akTop, akRight]
+          Fill.Color = xFF8037DA
+          Position.X = 256.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 166.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = btnMovimentacaoClick
+          OnMouseEnter = btnCategoriasMouseEnter
+          OnMouseLeave = btnCategoriasMouseLeave
+          object lblMovimentacao: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 124.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            TextSettings.WordWrap = False
+            Text = 'MOVIMENTA'#199#195'O'
+            TabOrder = 0
+          end
+        end
+        object btnRelatorios: TRectangle
+          Tag = 4
+          Anchors = [akTop, akRight]
+          Fill.Color = xFF8037DA
+          Position.X = 424.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 119.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = btnRelatoriosClick
+          OnMouseEnter = btnCategoriasMouseEnter
+          OnMouseLeave = btnCategoriasMouseLeave
+          object lblRelatorios: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 89.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            TextSettings.WordWrap = False
+            Text = 'RELAT'#211'RIOS'
+            TabOrder = 0
+          end
+        end
+        object btnInicio: TRectangle
+          Anchors = [akTop, akRight]
+          Fill.Color = xFF8037DA
+          Position.X = -114.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 117.000000000000000000
+          Size.Height = 39.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = btnInicioClick
+          OnMouseEnter = btnCategoriasMouseEnter
+          OnMouseLeave = btnCategoriasMouseLeave
+          object lblInicio: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 47.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            TextSettings.WordWrap = False
+            Text = 'IN'#205'CIO'
+            TabOrder = 0
+          end
+        end
+      end
+      object Layout2: TLayout
+        Align = Bottom
+        Position.Y = 564.000000000000000000
+        Size.Width = 551.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label3: TLabel
+          Align = Right
+          StyledSettings = [Family, Style]
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 360.000000000000000000
+          Size.Width = 181.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF777777
+          TextSettings.HorzAlign = Trailing
+          TextSettings.VertAlign = Trailing
+          Text = 'Desafio CRUD | Delphi'
+          TabOrder = 1
+        end
+        object lbUsuarioLogado: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Margins.Left = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 350.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF777777
+          TextSettings.VertAlign = Trailing
+          Text = 'Usu'#225'rio logado: '
+          TabOrder = 0
+        end
+      end
+      object TabMain: TTabControl
+        Align = Client
+        Size.Width = 551.000000000000000000
+        Size.Height = 491.000000000000000000
+        Size.PlatformDefault = False
+        TabIndex = 0
+        TabOrder = 2
+        TabPosition = None
+        Sizes = (
+          551s
+          491s)
+        object tbContent: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tbContent'
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+        end
+      end
+    end
+    object rctContainerMenu: TRectangle
+      Align = Left
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = claBlack
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF2D1650
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Size.Width = 273.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      OnPainting = rctContainerMenuPainting
+      object lytLogoMin: TLayout
+        Align = Top
+        Padding.Left = 8.000000000000000000
+        Padding.Top = 8.000000000000000000
+        Padding.Right = 8.000000000000000000
+        Padding.Bottom = 8.000000000000000000
+        Size.Width = 273.000000000000000000
+        Size.Height = 89.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label5: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 217.000000000000000000
+          Size.Height = 73.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 36.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'DesafioCRUD'
+          TabOrder = 0
+        end
+      end
+      object Layout1: TLayout
+        Align = Center
+        Padding.Left = 15.000000000000000000
+        Padding.Right = 15.000000000000000000
+        Size.Width = 273.000000000000000000
+        Size.Height = 297.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label1: TLabel
+          Align = Top
+          StyledSettings = [Family, Size, Style]
+          Position.X = 15.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          Text = 'Login'
+          TabOrder = 1
+        end
+        object Label2: TLabel
+          Align = Top
+          StyledSettings = [Family, Style]
+          Margins.Top = 8.000000000000000000
+          Position.X = 15.000000000000000000
+          Position.Y = 63.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          Text = 'Senha'
+          TabOrder = 0
+        end
+        object Rectangle1: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          HitTest = False
+          Margins.Top = 8.000000000000000000
+          Position.X = 15.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object edtLogin: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Scale
+            StyleLookup = 'transparentedit'
+            TabOrder = 0
+            Position.X = 8.000000000000000000
+            Position.Y = 4.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Size.Width = 228.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            CharCase = ecLowerCase
+            OnKeyUp = edtLoginKeyUp
+          end
+        end
+        object Rectangle2: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          HitTest = False
+          Margins.Top = 8.000000000000000000
+          Position.X = 15.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object edtSenha: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Scale
+            StyleLookup = 'transparentedit'
+            TabOrder = 0
+            Password = True
+            Position.X = 8.000000000000000000
+            Position.Y = 4.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Size.Width = 228.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            CharCase = ecLowerCase
+            OnKeyUp = edtSenhaKeyUp
+          end
+        end
+        object Layout3: TLayout
+          Align = Top
+          Margins.Top = 8.000000000000000000
+          Position.X = 15.000000000000000000
+          Position.Y = 126.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object btnLogin: TRectangle
+            Align = Center
+            Fill.Color = xFF8037DA
+            Size.Width = 125.000000000000000000
+            Size.Height = 39.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            OnClick = btnLoginClick
+            OnMouseEnter = btnLoginMouseEnter
+            OnMouseLeave = btnLoginMouseLeave
+            object Label8: TLabel
+              Align = Center
+              StyledSettings = [Family]
+              Locked = True
+              Size.Width = 125.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              TextSettings.WordWrap = False
+              Text = 'LOGIN'
+              TabOrder = 0
+            end
+          end
+        end
+        object Layout4: TLayout
+          Align = Top
+          Margins.Top = 12.000000000000000000
+          Position.X = 15.000000000000000000
+          Position.Y = 194.000000000000000000
+          Size.Width = 243.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object Layout5: TLayout
+            Align = Left
+            Size.Width = 145.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Label4: TLabel
+              Align = Top
+              AutoSize = True
+              StyledSettings = [Family, Style]
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 14.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              TextSettings.WordWrap = False
+              Text = 'N'#227'o possui cadastro ?'
+              TabOrder = 0
+            end
+          end
+          object Layout6: TLayout
+            Align = Client
+            Size.Width = 98.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object btnCadastrar: TRectangle
+              Align = Client
+              Fill.Kind = None
+              Size.Width = 98.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              OnClick = btnCadastrarClick
+              OnMouseEnter = btnCategoriasMouseEnter
+              OnMouseLeave = btnCategoriasMouseLeave
+              object lblCadastro: TLabel
+                Align = Top
+                AutoSize = True
+                StyledSettings = [Family]
+                Locked = True
+                Size.Width = 98.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = xFF8037DA
+                TextSettings.HorzAlign = Center
+                TextSettings.WordWrap = False
+                Text = 'Cadastre-se'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

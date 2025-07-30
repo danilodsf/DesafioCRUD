@@ -1,0 +1,773 @@
+object FormCadBase: TFormCadBase
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 464
+  ClientWidth = 707
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object lytPrincipal: TLayout
+    Align = Client
+    Size.Width = 707.000000000000000000
+    Size.Height = 464.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle6: TRectangle
+      Align = Client
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = claWhite
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Padding.Left = 10.000000000000000000
+      Padding.Top = 10.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Padding.Bottom = 10.000000000000000000
+      Size.Width = 707.000000000000000000
+      Size.Height = 464.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Rectangle9: TRectangle
+        Align = Client
+        Fill.Color = xFFECECEC
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 687.000000000000000000
+        Size.Height = 444.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        object TabControl: TTabControl
+          Align = Client
+          Size.Width = 667.000000000000000000
+          Size.Height = 383.000000000000000000
+          Size.PlatformDefault = False
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = None
+          Sizes = (
+            667s
+            383s
+            667s
+            383s)
+          object tbPesquisa: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = True
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'tbPesquisa'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object Layout2: TLayout
+              Align = Left
+              Padding.Left = 15.000000000000000000
+              Padding.Right = 15.000000000000000000
+              Size.Width = 193.000000000000000000
+              Size.Height = 383.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Layout3: TLayout
+                Align = Top
+                Position.X = 15.000000000000000000
+                Size.Width = 163.000000000000000000
+                Size.Height = 42.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object lblPesquisa: TLabel
+                  Align = Client
+                  StyledSettings = [Family, FontColor]
+                  Size.Width = 163.000000000000000000
+                  Size.Height = 41.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Size = 13.000000000000000000
+                  Text = 'Busca'
+                  TabOrder = 0
+                end
+                object Line1: TLine
+                  Align = Bottom
+                  HitTest = False
+                  LineType = Bottom
+                  Position.Y = 41.000000000000000000
+                  Size.Width = 163.000000000000000000
+                  Size.Height = 1.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Color = xFFCCCCCC
+                end
+              end
+              object Label10: TLabel
+                Align = Top
+                StyledSettings = [Family, Style]
+                Margins.Top = 20.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 62.000000000000000000
+                Size.Width = 163.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Descri'#231#227'o'
+                TabOrder = 1
+              end
+              object Layout4: TLayout
+                Align = Top
+                Margins.Top = 15.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 132.000000000000000000
+                Size.Width = 163.000000000000000000
+                Size.Height = 56.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                object btnPesquisar: TRectangle
+                  Align = Bottom
+                  Fill.Color = xFF8037DA
+                  Margins.Left = 25.000000000000000000
+                  Margins.Right = 25.000000000000000000
+                  Margins.Bottom = 10.000000000000000000
+                  Position.X = 25.000000000000000000
+                  Position.Y = 7.000000000000000000
+                  Size.Width = 113.000000000000000000
+                  Size.Height = 39.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 4.000000000000000000
+                  YRadius = 4.000000000000000000
+                  OnMouseEnter = btnPesquisarMouseEnter
+                  OnMouseLeave = btnPesquisarMouseLeave
+                  object Label11: TLabel
+                    Align = Client
+                    StyledSettings = [Family]
+                    Locked = True
+                    Size.Width = 85.000000000000000000
+                    Size.Height = 39.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 16.000000000000000000
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    TextSettings.WordWrap = False
+                    Text = 'Pesquisar'
+                    TabOrder = 0
+                  end
+                  object SkSvg6: TSkSvg
+                    Align = Left
+                    Locked = True
+                    Margins.Left = 8.000000000000000000
+                    Margins.Top = 8.000000000000000000
+                    Margins.Right = 3.000000000000000000
+                    Margins.Bottom = 8.000000000000000000
+                    Position.X = 8.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 17.000000000000000000
+                    Size.Height = 23.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.OverrideColor = claWhite
+                    Svg.Source = 
+                      '<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo' +
+                      ', www.svgrepo.com, Generator: SVG Repo Mixer Tools -->'#13#10'<svg fil' +
+                      'l="#000000" width="800px" height="800px" viewBox="0 0 24 24" xml' +
+                      'ns="http://www.w3.org/2000/svg"><path d="M10.035,18.069a7.981,7.' +
+                      '981,0,0,0,3.938-1.035l3.332,3.332a2.164,2.164,0,0,0,3.061-3.061l' +
+                      '-3.332-3.332A8.032,8.032,0,0,0,4.354,4.354a8.034,8.034,0,0,0,5.6' +
+                      '81,13.715ZM5.768,5.768A6.033,6.033,0,1,1,4,10.035,5.989,5.989,0,' +
+                      '0,1,5.768,5.768Z"/></svg>'
+                  end
+                end
+              end
+              object Rectangle1: TRectangle
+                Align = Top
+                Fill.Color = xFFECECEC
+                HitTest = False
+                Margins.Top = 8.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 87.000000000000000000
+                Size.Width = 163.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 4.000000000000000000
+                YRadius = 4.000000000000000000
+                object edtDescricao: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Scale
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Position.X = 15.000000000000000000
+                  Position.Y = 4.000000000000000000
+                  Margins.Top = 8.000000000000000000
+                  Size.Width = 141.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  OnKeyUp = edtDescricaoKeyUp
+                end
+              end
+            end
+            object Layout5: TLayout
+              Align = Client
+              Size.Width = 474.000000000000000000
+              Size.Height = 383.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              object lb: TListBox
+                Align = Client
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 2.000000000000000000
+                Size.Width = 462.000000000000000000
+                Size.Height = 295.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'lbStyle1'
+                TabOrder = 1
+                DisableFocusEffect = True
+                DefaultItemStyles.ItemStyle = ''
+                DefaultItemStyles.GroupHeaderStyle = 'listboxgroupheader'
+                DefaultItemStyles.GroupFooterStyle = ''
+                OnItemClick = lbItemClick
+                Viewport.Width = 458.000000000000000000
+                Viewport.Height = 251.000000000000000000
+                object ListBoxHeader1: TListBoxHeader
+                  Size.Width = 458.000000000000000000
+                  Size.Height = 40.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object Label6: TLabel
+                    Position.X = 8.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 40.000000000000000000
+                    Size.Height = 17.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'ID'
+                    TabOrder = 0
+                  end
+                  object Label7: TLabel
+                    Position.X = 50.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 143.000000000000000000
+                    Size.Height = 17.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Nome'
+                    TabOrder = 1
+                  end
+                  object Label8: TLabel
+                    Position.X = 198.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 179.000000000000000000
+                    Size.Height = 17.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Login'
+                    TabOrder = 2
+                  end
+                end
+              end
+              object Layout6: TLayout
+                Align = Bottom
+                Position.Y = 349.000000000000000000
+                Size.Width = 474.000000000000000000
+                Size.Height = 34.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object lbQtdRegistros: TLabel
+                  Align = Left
+                  StyledSettings = [Family, Size, Style]
+                  Margins.Left = 8.000000000000000000
+                  Margins.Bottom = 10.000000000000000000
+                  Position.X = 8.000000000000000000
+                  Size.Width = 120.000000000000000000
+                  Size.Height = 24.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.FontColor = xFF777777
+                  Text = '0 registros'
+                  TabOrder = 0
+                end
+              end
+              object Layout7: TLayout
+                Align = Top
+                Size.Width = 474.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                object btnIncluir: TRectangle
+                  Fill.Color = xFF8037DA
+                  Position.X = 8.000000000000000000
+                  Position.Y = 8.000000000000000000
+                  Size.Width = 81.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 4.000000000000000000
+                  YRadius = 4.000000000000000000
+                  OnClick = btnIncluirClick
+                  OnMouseEnter = btnPesquisarMouseEnter
+                  OnMouseLeave = btnPesquisarMouseLeave
+                  object Label1: TLabel
+                    Align = Client
+                    StyledSettings = [Family, Style]
+                    Locked = True
+                    Size.Width = 48.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 15.000000000000000000
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Text = 'Novo'
+                    TabOrder = 0
+                  end
+                  object SkSvg1: TSkSvg
+                    Align = Left
+                    Locked = True
+                    Margins.Left = 8.000000000000000000
+                    Margins.Top = 3.000000000000000000
+                    Margins.Right = 8.000000000000000000
+                    Margins.Bottom = 3.000000000000000000
+                    Position.X = 8.000000000000000000
+                    Position.Y = 3.000000000000000000
+                    Size.Width = 17.000000000000000000
+                    Size.Height = 27.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.OverrideColor = claWhite
+                    Svg.Source = 
+                      '<?xml version="1.0" encoding="utf-8"?>'#13#10#13#10'<!-- Uploaded to: SVG ' +
+                      'Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->'#13#10'<svg' +
+                      ' fill="#000000" height="800px" width="800px" version="1.1" id="X' +
+                      'MLID_196_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http:' +
+                      '//www.w3.org/1999/xlink" '#13#10#9' viewBox="0 0 24 24" xml:space="pres' +
+                      'erve">'#13#10'<g id="new">'#13#10#9'<g>'#13#10#9#9'<polygon points="13,23 11,23 11,13' +
+                      '.7 3,18.4 2,16.6 10,12 2,7.4 3,5.6 11,10.3 11,1 13,1 13,10.3 21,' +
+                      '5.6 22,7.4 14,12 22,16.6 '#13#10#9#9#9'21,18.4 13,13.7 '#9#9'"/>'#13#10#9'</g>'#13#10'</g>' +
+                      #13#10'</svg>'
+                  end
+                end
+              end
+            end
+          end
+          object tbCadastro: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = False
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'tbCadastro'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object Layout1: TLayout
+              Align = Top
+              Padding.Left = 15.000000000000000000
+              Size.Width = 667.000000000000000000
+              Size.Height = 65.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Layout9: TLayout
+                Align = Top
+                Margins.Top = 15.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 15.000000000000000000
+                Size.Width = 652.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object btnSalvar: TRectangle
+                  Align = Right
+                  Fill.Color = xFF8037DA
+                  Margins.Left = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Position.X = 342.000000000000000000
+                  Size.Width = 95.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 4.000000000000000000
+                  YRadius = 4.000000000000000000
+                  OnMouseEnter = btnPesquisarMouseEnter
+                  OnMouseLeave = btnPesquisarMouseLeave
+                  object Label3: TLabel
+                    Align = Client
+                    StyledSettings = [Family, Style]
+                    Locked = True
+                    Size.Width = 67.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 15.000000000000000000
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Text = 'Salvar'
+                    TabOrder = 0
+                  end
+                  object SkSvg3: TSkSvg
+                    Align = Left
+                    Locked = True
+                    Margins.Left = 8.000000000000000000
+                    Margins.Top = 8.000000000000000000
+                    Margins.Right = 3.000000000000000000
+                    Margins.Bottom = 8.000000000000000000
+                    Position.X = 8.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 17.000000000000000000
+                    Size.Height = 17.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.OverrideColor = claWhite
+                    Svg.Source = 
+                      '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'#13#10'<!-- Upl' +
+                      'oaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer T' +
+                      'ools -->'#13#10'<svg width="800px" height="800px" viewBox="0 0 32 32" ' +
+                      'version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="ht' +
+                      'tp://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancod' +
+                      'ing.com/sketch/ns">'#13#10'    '#13#10'    <title>save-floppy</title>'#13#10'    <' +
+                      'desc>Created with Sketch Beta.</desc>'#13#10'    <defs>'#13#10#13#10'</defs>'#13#10'  ' +
+                      '  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill' +
+                      '-rule="evenodd" sketch:type="MSPage">'#13#10'        <g id="Icon-Set" ' +
+                      'sketch:type="MSLayerGroup" transform="translate(-152.000000, -51' +
+                      '5.000000)" fill="#000000">'#13#10'            <path d="M171,525 C171.5' +
+                      '52,525 172,524.553 172,524 L172,520 C172,519.447 171.552,519 171' +
+                      ',519 C170.448,519 170,519.447 170,520 L170,524 C170,524.553 170.' +
+                      '448,525 171,525 L171,525 Z M182,543 C182,544.104 181.104,545 180' +
+                      ',545 L156,545 C154.896,545 154,544.104 154,543 L154,519 C154,517' +
+                      '.896 154.896,517 156,517 L158,517 L158,527 C158,528.104 158.896,' +
+                      '529 160,529 L176,529 C177.104,529 178,528.104 178,527 L178,517 L' +
+                      '180,517 C181.104,517 182,517.896 182,519 L182,543 L182,543 Z M16' +
+                      '0,517 L176,517 L176,526 C176,526.553 175.552,527 175,527 L161,52' +
+                      '7 C160.448,527 160,526.553 160,526 L160,517 L160,517 Z M180,515 ' +
+                      'L156,515 C153.791,515 152,516.791 152,519 L152,543 C152,545.209 ' +
+                      '153.791,547 156,547 L180,547 C182.209,547 184,545.209 184,543 L1' +
+                      '84,519 C184,516.791 182.209,515 180,515 L180,515 Z" id="save-flo' +
+                      'ppy" sketch:type="MSShapeGroup">'#13#10#13#10'</path>'#13#10'        </g>'#13#10'    <' +
+                      '/g>'#13#10'</svg>'
+                  end
+                end
+                object btnVoltar: TRectangle
+                  Fill.Color = xFF8037DA
+                  Margins.Right = 30.000000000000000000
+                  Position.X = 3.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 27.000000000000000000
+                  Size.Height = 27.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 4.000000000000000000
+                  YRadius = 4.000000000000000000
+                  OnClick = btnVoltarClick
+                  OnMouseEnter = btnPesquisarMouseEnter
+                  OnMouseLeave = btnPesquisarMouseLeave
+                  object SkSvg5: TSkSvg
+                    Align = Client
+                    Locked = True
+                    Margins.Left = 3.000000000000000000
+                    Margins.Top = 3.000000000000000000
+                    Margins.Right = 3.000000000000000000
+                    Margins.Bottom = 3.000000000000000000
+                    Size.Width = 21.000000000000000000
+                    Size.Height = 21.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.OverrideColor = claWhite
+                    Svg.Source = 
+                      '<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo' +
+                      ', www.svgrepo.com, Generator: SVG Repo Mixer Tools -->'#13#10'<svg wid' +
+                      'th="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns=' +
+                      '"http://www.w3.org/2000/svg">'#13#10'<path fill-rule="evenodd" clip-ru' +
+                      'le="evenodd" d="M11.7071 4.29289C12.0976 4.68342 12.0976 5.31658' +
+                      ' 11.7071 5.70711L6.41421 11H20C20.5523 11 21 11.4477 21 12C21 12' +
+                      '.5523 20.5523 13 20 13H6.41421L11.7071 18.2929C12.0976 18.6834 1' +
+                      '2.0976 19.3166 11.7071 19.7071C11.3166 20.0976 10.6834 20.0976 1' +
+                      '0.2929 19.7071L3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 ' +
+                      '11.7348 3.10536 11.4804 3.29289 11.2929L10.2929 4.29289C10.6834 ' +
+                      '3.90237 11.3166 3.90237 11.7071 4.29289Z" fill="#000000"/>'#13#10'</sv' +
+                      'g>'
+                  end
+                end
+                object btnEditar: TRectangle
+                  Align = Right
+                  Fill.Color = xFF8037DA
+                  Margins.Left = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Position.X = 447.000000000000000000
+                  Size.Width = 95.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 4.000000000000000000
+                  YRadius = 4.000000000000000000
+                  OnClick = btnEditarClick
+                  OnMouseEnter = btnPesquisarMouseEnter
+                  OnMouseLeave = btnPesquisarMouseLeave
+                  object Label2: TLabel
+                    Align = Client
+                    StyledSettings = [Family, Style]
+                    Locked = True
+                    Size.Width = 67.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 15.000000000000000000
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Text = 'Editar'
+                    TabOrder = 0
+                  end
+                  object SkSvg2: TSkSvg
+                    Align = Left
+                    Locked = True
+                    Margins.Left = 8.000000000000000000
+                    Margins.Top = 8.000000000000000000
+                    Margins.Right = 3.000000000000000000
+                    Margins.Bottom = 8.000000000000000000
+                    Position.X = 8.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 17.000000000000000000
+                    Size.Height = 17.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.OverrideColor = claWhite
+                    Svg.Source = 
+                      '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'#13#10'<!-- Upl' +
+                      'oaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer T' +
+                      'ools -->'#13#10'<svg width="800px" height="800px" viewBox="0 0 32 32" ' +
+                      'version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="ht' +
+                      'tp://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancod' +
+                      'ing.com/sketch/ns">'#13#10'    '#13#10'    <title>new</title>'#13#10'    <desc>Cre' +
+                      'ated with Sketch Beta.</desc>'#13#10'    <defs>'#13#10#13#10'</defs>'#13#10'    <g id=' +
+                      '"Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="e' +
+                      'venodd" sketch:type="MSPage">'#13#10'        <g id="Icon-Set" sketch:t' +
+                      'ype="MSLayerGroup" transform="translate(-516.000000, -99.000000)' +
+                      '" fill="#000000">'#13#10'            <path d="M527.786,122.02 L522.414' +
+                      ',125.273 C521.925,125.501 521.485,125.029 521.713,124.571 L524.9' +
+                      '65,119.195 L527.786,122.02 L527.786,122.02 Z M537.239,106.222 L5' +
+                      '40.776,109.712 L529.536,120.959 C528.22,119.641 526.397,117.817 ' +
+                      '526.024,117.444 L537.239,106.222 L537.239,106.222 Z M540.776,102' +
+                      '.683 C541.164,102.294 541.793,102.294 542.182,102.683 L544.289,1' +
+                      '04.791 C544.677,105.18 544.677,105.809 544.289,106.197 L542.182,' +
+                      '108.306 L538.719,104.74 L540.776,102.683 L540.776,102.683 Z M524' +
+                      '.11,117.068 L519.81,125.773 C519.449,126.754 520.233,127.632 521' +
+                      '.213,127.177 L529.912,122.874 C530.287,122.801 530.651,122.655 5' +
+                      '30.941,122.365 L546.396,106.899 C547.172,106.124 547.172,104.864' +
+                      ' 546.396,104.088 L542.884,100.573 C542.107,99.797 540.85,99.797 ' +
+                      '540.074,100.573 L524.619,116.038 C524.328,116.329 524.184,116.69' +
+                      '3 524.11,117.068 L524.11,117.068 Z M546,111 L546,127 C546,128.09' +
+                      '9 544.914,129.012 543.817,129.012 L519.974,129.012 C518.877,129.' +
+                      '012 517.987,128.122 517.987,127.023 L517.987,103.165 C517.987,10' +
+                      '2.066 518.902,101 520,101 L536,101 L536,99 L520,99 C517.806,99 5' +
+                      '16,100.969 516,103.165 L516,127.023 C516,129.22 517.779,131 519.' +
+                      '974,131 L543.817,131 C546.012,131 548,129.196 548,127 L548,111 L' +
+                      '546,111 L546,111 Z" id="new" sketch:type="MSShapeGroup">'#13#10#13#10'</pa' +
+                      'th>'#13#10'        </g>'#13#10'    </g>'#13#10'</svg>'
+                  end
+                end
+                object btnExcluir: TRectangle
+                  Align = Right
+                  Fill.Color = xFF8037DA
+                  Margins.Left = 5.000000000000000000
+                  Margins.Right = 5.000000000000000000
+                  Position.X = 552.000000000000000000
+                  Size.Width = 95.000000000000000000
+                  Size.Height = 33.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 4.000000000000000000
+                  YRadius = 4.000000000000000000
+                  OnMouseEnter = btnPesquisarMouseEnter
+                  OnMouseLeave = btnPesquisarMouseLeave
+                  object Label4: TLabel
+                    Align = Client
+                    StyledSettings = [Family, Style]
+                    Locked = True
+                    Size.Width = 67.000000000000000000
+                    Size.Height = 33.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.Size = 15.000000000000000000
+                    TextSettings.FontColor = claWhite
+                    TextSettings.HorzAlign = Center
+                    Text = 'Excluir'
+                    TabOrder = 0
+                  end
+                  object SkSvg4: TSkSvg
+                    Align = Left
+                    Locked = True
+                    Margins.Left = 8.000000000000000000
+                    Margins.Top = 8.000000000000000000
+                    Margins.Right = 3.000000000000000000
+                    Margins.Bottom = 8.000000000000000000
+                    Position.X = 8.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 17.000000000000000000
+                    Size.Height = 17.000000000000000000
+                    Size.PlatformDefault = False
+                    Svg.OverrideColor = claWhite
+                    Svg.Source = 
+                      '<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo' +
+                      ', www.svgrepo.com, Generator: SVG Repo Mixer Tools -->'#13#10'<svg wid' +
+                      'th="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://' +
+                      'www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0' +
+                      ' 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192' +
+                      'h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-' +
+                      '32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-1' +
+                      '28a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z' +
+                      'm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32' +
+                      ' 32z"/></svg>'
+                  end
+                end
+              end
+            end
+            object lytCadastro: TLayout
+              Align = Client
+              Padding.Left = 15.000000000000000000
+              Size.Width = 667.000000000000000000
+              Size.Height = 318.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Label13: TLabel
+                StyledSettings = [Family, Style]
+                Margins.Top = 20.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 20.000000000000000000
+                Size.Width = 34.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'ID'
+                TabOrder = 3
+              end
+              object Rectangle10: TRectangle
+                Fill.Color = xFFC4C4C4
+                Margins.Top = 8.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 39.000000000000000000
+                Size.Width = 58.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 4.000000000000000000
+                YRadius = 4.000000000000000000
+                object edtCadID: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Scale
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Position.X = 2.846625566482544000
+                  Position.Y = 4.000000000000000000
+                  Enabled = False
+                  Margins.Top = 8.000000000000000000
+                  Size.Width = 51.595088958740230000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+              object Label14: TLabel
+                StyledSettings = [Family, Style]
+                Margins.Top = 20.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 76.000000000000000000
+                Size.Width = 154.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Descri'#231#227'o'
+                TabOrder = 2
+              end
+              object Rectangle11: TRectangle
+                Fill.Color = xFFECECEC
+                Locked = True
+                HitTest = False
+                Margins.Top = 8.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 95.000000000000000000
+                Size.Width = 314.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 4.000000000000000000
+                YRadius = 4.000000000000000000
+                object edtCadDescricao: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Scale
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Position.X = 15.000000000000000000
+                  Position.Y = 4.000000000000000000
+                  Margins.Top = 8.000000000000000000
+                  Size.Width = 280.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+            end
+          end
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 5.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.200000002980232200
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+        object Layout8: TLayout
+          Align = Top
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 667.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnSair: TRectangle
+            Anchors = [akTop, akRight]
+            Fill.Color = xFF8037DA
+            Margins.Left = 15.000000000000000000
+            Margins.Top = 3.000000000000000000
+            Margins.Bottom = 3.000000000000000000
+            Position.X = 635.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 27.000000000000000000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            OnClick = btnSairClick
+            OnMouseEnter = btnPesquisarMouseEnter
+            OnMouseLeave = btnPesquisarMouseLeave
+            object SkSvg7: TSkSvg
+              Align = Client
+              Locked = True
+              Margins.Left = 3.000000000000000000
+              Margins.Top = 3.000000000000000000
+              Margins.Right = 3.000000000000000000
+              Margins.Bottom = 3.000000000000000000
+              Size.Width = 21.000000000000000000
+              Size.Height = 21.000000000000000000
+              Size.PlatformDefault = False
+              Svg.OverrideColor = claWhite
+              Svg.Source = 
+                '<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo' +
+                ', www.svgrepo.com, Generator: SVG Repo Mixer Tools -->'#13#10'<svg wid' +
+                'th="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://' +
+                'www.w3.org/2000/svg"><path fill="#000000" d="M195.2 195.2a64 64 ' +
+                '0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.4' +
+                '96L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.4' +
+                '96 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285' +
+                '.696a64 64 0 0 1 0-90.496z"/></svg>'
+            end
+          end
+        end
+      end
+    end
+  end
+end

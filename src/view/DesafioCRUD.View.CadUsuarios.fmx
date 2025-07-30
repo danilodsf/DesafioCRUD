@@ -1,0 +1,199 @@
+inherited FormCadUsuarios: TFormCadUsuarios
+  BorderStyle = None
+  Caption = 'Cadastro de usu'#225'rios'
+  ClientHeight = 339
+  ClientWidth = 405
+  Fill.Color = x00FFFFFF
+  Fill.Kind = Solid
+  Transparency = True
+  DesignerMasterStyle = 0
+  inherited lytPrincipal: TLayout
+    Size.Width = 405.000000000000000000
+    Size.Height = 339.000000000000000000
+    inherited Rectangle6: TRectangle
+      Fill.Kind = None
+      Size.Width = 405.000000000000000000
+      Size.Height = 339.000000000000000000
+      inherited Rectangle9: TRectangle
+        Size.Width = 385.000000000000000000
+        Size.Height = 319.000000000000000000
+        inherited TabControl: TTabControl
+          Size.Width = 365.000000000000000000
+          Size.Height = 258.000000000000000000
+          TabIndex = 1
+          Sizes = (
+            365s
+            258s
+            365s
+            258s)
+          inherited tbPesquisa: TTabItem
+            IsSelected = False
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            inherited Layout2: TLayout
+              Size.Height = 258.000000000000000000
+            end
+            inherited Layout5: TLayout
+              Size.Width = 172.000000000000000000
+              Size.Height = 258.000000000000000000
+              inherited lb: TListBox
+                Size.Width = 160.000000000000000000
+                Size.Height = 170.000000000000000000
+                Viewport.Width = 156.000000000000000000
+                Viewport.Height = 126.000000000000000000
+                inherited ListBoxHeader1: TListBoxHeader
+                  Size.Width = 160.000000000000000000
+                end
+              end
+              inherited Layout6: TLayout
+                Position.Y = 224.000000000000000000
+                Size.Width = 172.000000000000000000
+              end
+              inherited Layout7: TLayout
+                Size.Width = 172.000000000000000000
+              end
+            end
+          end
+          inherited tbCadastro: TTabItem
+            IsSelected = True
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            inherited Layout1: TLayout
+              Size.Width = 365.000000000000000000
+              inherited Layout9: TLayout
+                Size.Width = 350.000000000000000000
+                inherited btnSalvar: TRectangle
+                  Position.X = 40.000000000000000000
+                  OnClick = btnSalvarClick
+                end
+                inherited btnVoltar: TRectangle
+                  Visible = False
+                end
+                inherited btnEditar: TRectangle
+                  Position.X = 145.000000000000000000
+                end
+                inherited btnExcluir: TRectangle
+                  Position.X = 250.000000000000000000
+                  OnClick = btnExcluirClick
+                end
+              end
+            end
+            inherited lytCadastro: TLayout
+              Size.Width = 365.000000000000000000
+              Size.Height = 193.000000000000000000
+              inherited Label13: TLabel
+                Visible = False
+                TabOrder = 5
+              end
+              inherited Rectangle10: TRectangle
+                Visible = False
+                inherited edtCadID: TEdit
+                  Visible = False
+                end
+              end
+              inherited Label14: TLabel
+                Position.Y = 13.000000000000000000
+                Text = 'Nome'
+                TabOrder = 4
+              end
+              inherited Rectangle11: TRectangle
+                Position.Y = 32.000000000000000000
+                inherited edtCadDescricao: TEdit
+                  TextPrompt = 'Digite o seu nome'
+                  OnKeyUp = edtCadDescricaoKeyUp
+                end
+              end
+              object Label5: TLabel
+                StyledSettings = [Family, Style]
+                Margins.Top = 20.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 69.000000000000000000
+                Size.Width = 154.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Login'
+                TabOrder = 3
+              end
+              object Label9: TLabel
+                StyledSettings = [Family, Style]
+                Margins.Top = 20.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 125.000000000000000000
+                Size.Width = 154.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Senha'
+                TabOrder = 2
+              end
+              object Rectangle2: TRectangle
+                Fill.Color = xFFECECEC
+                Locked = True
+                HitTest = False
+                Margins.Top = 8.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 144.000000000000000000
+                Size.Width = 314.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 4.000000000000000000
+                YRadius = 4.000000000000000000
+                object edtCadSenha: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Scale
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Password = True
+                  Position.X = 15.000000000000000000
+                  Position.Y = 4.000000000000000000
+                  Margins.Top = 8.000000000000000000
+                  Size.Width = 280.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Digite a sua senha'
+                  OnKeyUp = edtCadSenhaKeyUp
+                end
+              end
+              object Rectangle3: TRectangle
+                Fill.Color = xFFECECEC
+                Locked = True
+                HitTest = False
+                Margins.Top = 8.000000000000000000
+                Position.X = 17.000000000000000000
+                Position.Y = 90.000000000000000000
+                Size.Width = 314.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 4.000000000000000000
+                YRadius = 4.000000000000000000
+                object edtCadLogin: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Scale
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  Position.X = 15.000000000000000000
+                  Position.Y = 4.000000000000000000
+                  Margins.Top = 8.000000000000000000
+                  Size.Width = 280.000000000000000000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Digite o seu login'
+                  OnKeyUp = edtCadLoginKeyUp
+                end
+              end
+            end
+          end
+        end
+        inherited Layout8: TLayout
+          Size.Width = 365.000000000000000000
+          inherited btnSair: TRectangle
+            Position.X = 333.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

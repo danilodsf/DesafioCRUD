@@ -1,0 +1,67 @@
+object FormLogo: TFormLogo
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 528
+  ClientWidth = 706
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lytPrincipal: TLayout
+    Align = Client
+    Size.Width = 706.000000000000000000
+    Size.Height = 528.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout1: TLayout
+      Align = Bottom
+      Position.Y = 478.000000000000000000
+      Size.Width = 706.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnLogout: TRectangle
+        Anchors = [akRight, akBottom]
+        Fill.Color = xFFC7C7C7
+        Position.X = 616.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 4.000000000000000000
+        YRadius = 4.000000000000000000
+        OnClick = btnLogoutClick
+        OnMouseEnter = btnLogoutMouseEnter
+        OnMouseLeave = btnLogoutMouseLeave
+        object Label1: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Locked = True
+          Size.Width = 81.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = xFF595959
+          TextSettings.HorzAlign = Center
+          Text = 'Logoff'
+          TabOrder = 0
+        end
+      end
+    end
+    object Label2: TLabel
+      Align = Center
+      StyledSettings = [Family, Style]
+      Size.Width = 354.000000000000000000
+      Size.Height = 131.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 48.000000000000000000
+      TextSettings.FontColor = xFF8037DA
+      TextSettings.HorzAlign = Center
+      Text = 'DesafioCRUD'
+      TabOrder = 1
+    end
+  end
+end

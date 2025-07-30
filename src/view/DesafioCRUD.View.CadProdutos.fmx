@@ -1,0 +1,160 @@
+inherited FormCadProdutos: TFormCadProdutos
+  Caption = 'FormCadBase1'
+  DesignerMasterStyle = 0
+  inherited lytPrincipal: TLayout
+    inherited Rectangle6: TRectangle
+      inherited Rectangle9: TRectangle
+        inherited TabControl: TTabControl
+          TabIndex = 1
+          Sizes = (
+            667s
+            383s
+            667s
+            383s)
+          inherited tbPesquisa: TTabItem
+            IsSelected = False
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            inherited Layout2: TLayout
+              inherited Layout4: TLayout
+                inherited btnPesquisar: TRectangle
+                  OnClick = btnPesquisarClick
+                end
+              end
+            end
+            inherited Layout5: TLayout
+              inherited lb: TListBox
+                Viewport.Width = 458.000000000000000000
+                Viewport.Height = 251.000000000000000000
+                inherited ListBoxHeader1: TListBoxHeader
+                  Size.Width = 462.000000000000000000
+                  inherited Label7: TLabel
+                    Size.Width = 137.000000000000000000
+                    Text = 'Descri'#231#227'o'
+                  end
+                  inherited Label8: TLabel
+                    Position.X = 194.000000000000000000
+                    Size.Width = 67.000000000000000000
+                    Text = 'Categoria'
+                    TabOrder = 4
+                  end
+                  object Label5: TLabel
+                    Position.X = 317.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 55.000000000000000000
+                    Size.Height = 16.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.HorzAlign = Center
+                    TextSettings.WordWrap = False
+                    Text = 'Pre'#231'o'
+                    TabOrder = 3
+                  end
+                  object Label9: TLabel
+                    Position.X = 397.000000000000000000
+                    Position.Y = 8.000000000000000000
+                    Size.Width = 55.000000000000000000
+                    Size.Height = 17.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Estoque'
+                    TabOrder = 2
+                  end
+                end
+              end
+            end
+          end
+          inherited tbCadastro: TTabItem
+            IsSelected = True
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            inherited Layout1: TLayout
+              inherited Layout9: TLayout
+                inherited btnSalvar: TRectangle
+                  OnClick = btnSalvarClick
+                end
+                inherited btnExcluir: TRectangle
+                  OnClick = btnExcluirClick
+                end
+              end
+            end
+            inherited lytCadastro: TLayout
+              inherited Label13: TLabel
+                TabOrder = 5
+              end
+              inherited Label14: TLabel
+                TabOrder = 4
+              end
+              inherited Rectangle11: TRectangle
+                inherited edtCadDescricao: TEdit
+                  OnKeyUp = edtCadDescricaoKeyUp
+                end
+              end
+              object Label12: TLabel
+                StyledSettings = [Family, Style]
+                Margins.Top = 20.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 132.000000000000000000
+                Size.Width = 154.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Categoria'
+                TabOrder = 2
+              end
+              object Label15: TLabel
+                StyledSettings = [Family, Style]
+                Margins.Top = 20.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 188.000000000000000000
+                Size.Width = 154.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Pre'#231'o'
+                TabOrder = 3
+              end
+              object Rectangle3: TRectangle
+                Fill.Color = xFFECECEC
+                Locked = True
+                HitTest = False
+                Margins.Top = 8.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 207.000000000000000000
+                Size.Width = 106.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                XRadius = 4.000000000000000000
+                YRadius = 4.000000000000000000
+                object edtCadPreco: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Scale
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  KeyboardType = NumbersAndPunctuation
+                  TextSettings.HorzAlign = Trailing
+                  Position.X = 5.063694000244141000
+                  Position.Y = 4.000000000000000000
+                  Margins.Top = 8.000000000000000000
+                  Size.Width = 94.522293090820310000
+                  Size.Height = 22.000000000000000000
+                  Size.PlatformDefault = False
+                  OnKeyDown = edtCadPrecoKeyDown
+                  OnKeyUp = edtCadPrecoKeyUp
+                end
+              end
+              object cboCadCategoria: TComboBox
+                Position.X = 16.000000000000000000
+                Position.Y = 156.000000000000000000
+                Size.Width = 313.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'cboCadCategoriaStyle1'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

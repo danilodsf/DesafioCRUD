@@ -1,0 +1,14 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2025-07-29T21:54:04.6446048-03:00",
+	"installedModules": {
+		"https://github.com/jacktrapper/bcrypt-for-delphi": {
+			"name": "bcrypt-for-delphi",
+			"version": "master",
+			"hash": "5efa42ef693748a9712ba07bd50d7e37",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

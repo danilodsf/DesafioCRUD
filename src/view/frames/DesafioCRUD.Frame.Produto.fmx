@@ -1,0 +1,95 @@
+object FrameProduto: TFrameProduto
+  HitTest = False
+  Size.Width = 520.000000000000000000
+  Size.Height = 39.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    HitTest = False
+    Size.Width = 520.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Path1: TPath
+      Align = Right
+      Data.Path = {
+        070000000000000066A6D143666684430100000000C0B243CC4CA34301000000
+        9AB90744000000440100000000C0B2439A592E440100000066A6D143CDCC3D44
+        0100000000A02644000000440300000066A6D14366668443}
+      Fill.Color = xFFB4B4B4
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 498.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 12.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lbID: TLabel
+      StyledSettings = [Size, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lbID'
+      TabOrder = 1
+    end
+    object lbDescricao: TLabel
+      StyledSettings = [Size, Style, FontColor]
+      Position.X = 50.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lbDescricao'
+      TabOrder = 2
+    end
+  end
+  object Line1: TLine
+    Align = Bottom
+    HitTest = False
+    LineType = Bottom
+    Position.Y = 38.000000000000000000
+    Size.Width = 520.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFCCCCCC
+  end
+  object lbCategoria: TLabel
+    StyledSettings = [Size, Style, FontColor]
+    Position.X = 194.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 119.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'lbCategoria'
+    TabOrder = 4
+  end
+  object lbPreco: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 317.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 63.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'lbPreco'
+    TabOrder = 3
+  end
+  object lbEstoque: TLabel
+    StyledSettings = [Size, Style, FontColor]
+    Position.X = 408.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 68.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'lbEstoque'
+    TabOrder = 2
+  end
+end

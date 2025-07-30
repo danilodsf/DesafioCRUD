@@ -1,0 +1,76 @@
+inherited FormCadCategoria: TFormCadCategoria
+  Caption = 'FormCadBase1'
+  Fill.Kind = Solid
+  DesignerMasterStyle = 0
+  inherited lytPrincipal: TLayout
+    inherited Rectangle6: TRectangle
+      inherited Rectangle9: TRectangle
+        inherited TabControl: TTabControl
+          Sizes = (
+            667s
+            383s
+            667s
+            383s)
+          inherited tbPesquisa: TTabItem
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            inherited Layout2: TLayout
+              inherited Layout4: TLayout
+                inherited btnPesquisar: TRectangle
+                  OnClick = btnPesquisarClick
+                end
+              end
+              inherited Rectangle1: TRectangle
+                Locked = True
+              end
+            end
+            inherited Layout5: TLayout
+              inherited lb: TListBox
+                Viewport.Width = 458.000000000000000000
+                Viewport.Height = 251.000000000000000000
+                inherited ListBoxHeader1: TListBoxHeader
+                  inherited Label7: TLabel
+                    Text = 'Descri'#231#227'o'
+                  end
+                  inherited Label8: TLabel
+                    Visible = False
+                  end
+                end
+              end
+            end
+          end
+          inherited tbCadastro: TTabItem
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            inherited Layout1: TLayout
+              inherited Layout9: TLayout
+                inherited btnSalvar: TRectangle
+                  OnClick = btnSalvarClick
+                end
+                inherited btnExcluir: TRectangle
+                  OnClick = btnExcluirClick
+                end
+              end
+            end
+            inherited lytCadastro: TLayout
+              inherited Rectangle10: TRectangle
+                inherited edtCadID: TEdit
+                  ReadOnly = True
+                  Position.X = 7.000000000000000000
+                  Size.Width = 46.000000000000000000
+                end
+              end
+              inherited Rectangle11: TRectangle
+                inherited edtCadDescricao: TEdit
+                  Position.X = 7.000000000000000000
+                  Size.Width = 299.000000000000000000
+                  TextPrompt = 'Digite a descri'#231#227'o da categoria'
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
