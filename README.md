@@ -93,4 +93,16 @@ Este projeto foi construído com foco em boas práticas, arquitetura limpa e uti
 
 ---
 
+## 🖼️ Screenshots
+
+### 🔐 Tela de Login
+![Tela de Login](assets/img/tela_login.png)
+
+### 🛒 Cadastro de Produto
+![Cadastro de Produto](assets/img/tela_cadastro_produto.png)
+
+### 📊 Relatório de Movimentações
+![Relatório](assets/img/relatorio_movimentacoes.png)
+
+
 > Repositório público para fins de portfólio técnico.
