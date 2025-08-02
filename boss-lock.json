@@ -2,6 +2,14 @@
 	"hash": "d41d8cd98f00b204e9800998ecf8427e",
 	"updated": "2025-07-29T21:54:04.6446048-03:00",
 	"installedModules": {
+		"https://github.com/danilodsf/upx": {
+			"name": "upx",
+			"version": "v5.0.2",
+			"hash": "f5a6b878bdab00f00c39210dc37f1242",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
 		"https://github.com/jacktrapper/bcrypt-for-delphi": {
 			"name": "bcrypt-for-delphi",
 			"version": "master",
